@@ -4,7 +4,7 @@ export default function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Tela Inicial</Text>
-            <Button
+            <Button                                                         // botão que leva para tela de detalhes
                 title="Ir para Detalhes"
                 onPress={() => navigation.navigate('Detalhes')}
             />

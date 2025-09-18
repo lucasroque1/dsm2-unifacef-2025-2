@@ -1,5 +1,5 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';                    // ícone do Ionicons
 export default function ProfileScreen() {
   return (
     <View style={styles.container}>
@@ -12,6 +12,6 @@ export default function ProfileScreen() {
 }
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  avatar: { width: 100, height: 100, borderRadius: 50 },
+  avatar: { width: 100, height: 100, borderRadius: 50 },                      // avatar circular
   nome: { fontSize: 22, fontWeight: 'bold', marginVertical: 10 }
 });
