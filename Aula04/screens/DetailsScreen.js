@@ -4,8 +4,8 @@ export default function DetailsScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Tela de Detalhes</Text>
-            <Button title="Voltar" onPress={() => navigation.goBack()} />           // botão para voltar
-            <Button                                                                 // botão para ir ao perfil
+            <Button title="Voltar" onPress={() => navigation.goBack()} />           
+            <Button                                                                 
                 title="Ir para Perfil"
                 onPress={() => navigation.navigate('Perfil')}
             />

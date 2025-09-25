@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';              // importa a barra de status do Expo
-import { StyleSheet, Text, View } from 'react-native';    // importa componentes básicos do React Native
+import { StatusBar } from 'expo-status-bar';              
+import { StyleSheet, Text, View } from 'react-native';    
 
-export default function App() {                           // função principal do app
+export default function App() {                           
   return (
-    <View style={styles.container}>                       // container principal da tela
-      <Text>Testando aula 3 do Fausto!</Text>             // exibe um texto
-      <StatusBar style="auto" />                          // exibe a barra de status
+    <View style={styles.container}>                       
+      <Text>Testando aula 3 do Fausto!</Text>             
+      <StatusBar style="auto" />                          
     </View>
   );
 }
 
-const styles = StyleSheet.create({                        // criação dos estilos
+const styles = StyleSheet.create({                        
   container: {
-    flex: 1,                                              // ocupa a tela inteira
-    backgroundColor: '#fff',                            // fundo branco
-    alignItems: 'center',                                 // centraliza horizontalmente
-    justifyContent: 'center',                             // centraliza verticalmente
+    flex: 1,                                              
+    backgroundColor: '#fff',                            
+    alignItems: 'center',                                
+    justifyContent: 'center',                             
   },
 });
