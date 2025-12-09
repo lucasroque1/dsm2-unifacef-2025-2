@@ -13,7 +13,7 @@ export default function HomeScreen({ navigation }) {
             <FontAwesome name="home" size={80} color="blue" />                              
             <MaterialCommunityIcons name="horse-variant-fast" size={80} color="green" />    
             <Button title="Perfil" onPress={() => navigation.navigate('Perfil')}/>
-            <Button title="Galeria" onPress={() => navigation.navigate("Galeria")} />
+            <Button title="Galeria" onPress={() => navigation.navigate("Galeria2")} />
 
         </View>
     );

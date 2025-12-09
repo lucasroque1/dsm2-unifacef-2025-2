@@ -1,32 +1,35 @@
 import { View, Text, Image, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 export default function GaleriaScreen() {
-    return (
+    return <>
         <View style={styles.container}>
-            <Ionicons name="camera" size={40} color="purple" style={styles.icon} />
-            <Text style={styles.title}>Minha Galeria</Text>
-            <View style={styles.imagesContainer}>
-                <Image
-                    source={require("../assets/baixados.jpeg")}
-                    style={styles.image}
-                />
-                <Image
-                    source={require("../assets/cidades-do-canada.jpg")}
-                    style={styles.image}
-                />
-                <Image
-                    source={require("../assets/imagens-de-paisagens.jpg")}
-                    style={styles.image}
-                />
-            </View>
+            <FontAwesome name="camera" size={64} color="orange" />
+            <Image
+                source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/500px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg' }}
+                style={styles.image}
+            />
+            <Image
+                source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Final_33a_Lliga_Catalana_AON_2021_LF_%28Foto_Ferran_Torn%C3%A9%29_%2851462803743%29.jpg/500px-Final_33a_Lliga_Catalana_AON_2021_LF_%28Foto_Ferran_Torn%C3%A9%29_%2851462803743%29.jpg' }}
+                style={styles.image}
+            />
+            <Image
+                source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Europei_di_pallavolo_2005_-_Italia-Russia.jpg' }}
+                style={styles.image}
+            />
         </View>
-    );
+    </>
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, alignItems: "center", backgroundColor: "#fff" },
-    icon: { marginTop: 40 }, title: { fontSize: 22, fontWeight: "bold", marginBottom: 20 },
-    imagesContainer: { flexDirection: "row", justifyContent: "space-around" },
-    image: { width: 100, height: 100, marginHorizontal: 5, borderRadius: 10 },
-});
+    container: {
+        flex: 1,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-around'
+    },
+    image: {
+        width: 240,
+        height: 240
+    }
+})

@@ -13,8 +13,8 @@ export default function HomeScreen({ navigation }) {
         onPress={() => navigation.navigate('Validação de Formulário')}
       />
       <Button
-        title="Desafio Final"
-        onPress={() => navigation.navigate('Desafio Final')}
+        title="Cadastro Completo"
+        onPress={() => navigation.navigate('Cadastro Completo')}
       />
     </View>
   );

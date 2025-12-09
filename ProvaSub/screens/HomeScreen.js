@@ -5,7 +5,7 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
 
       <Text style={styles.titulo}>Agenda</Text>
-      <Text style={styles.nome}>Lucas Roque Jacomine</Text>
+      <Text style={styles.nom}>Lucas Roque Jacomine</Text>
       <Text style={styles.turma}>Sistema de Informação</Text>
 
       <View style={styles.spacer} />
@@ -20,6 +20,6 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   titulo: { fontSize: 26, fontWeight: 'bold', marginBottom: 30 },
-  nome: { fontSize: 20, marginTop: 10 },
+  nom: { fontSize: 20, marginTop: 10 },
   turma: { fontSize: 18, marginBottom: 40 },
 });
